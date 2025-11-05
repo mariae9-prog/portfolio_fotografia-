@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Maria</title>
+    <link rel="icon" href="photo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #bb9898;
+            color: #6b2121;
+            cursor:url('camera (1).png') 10 10, auto;
+        }
+
+
+        header {
+            background: linear-gradient(to right, #cd7ae8, #391a42);
+            color: rgb(238, 216, 216);
+            text-align: center;
+            padding: 40px 0;
+        }
+
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+
+        nav {
+            background-color: #8c345a;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s;
+            border-radius: 5px;
+        }
+
+
+        nav a:hover {
+            background-color: #00c4ff;
+        }
+
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #sobre {
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .parallax {
+            height: 400px;
+            background-image: url('imagem.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgb(135, 91, 130);
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+
+        .galeria img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 220px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+
+        .tag-oferta {
+            position: absolute;
+            background-color: red;
+            color: white;
+            padding: 4px 8px;
+            top: 8px;
+            left: 8px;
+            border-radius: 5px;
+        }
+
+        .hover {
+            background-color: blueviolet;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+
+
+        .hover:hover {
+            background-color: blue;
+        }
+
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+
+        footer a {
+            color: #00c4ff;
+            text-decoration: none;
+        }
+
+        img {
+            transition: transform 4s;
+        }
+
+        img:hover {
+            transform: rotateY(360deg);
+        }
+
+        h1 {
+            cursor: url('camerazinha(1).png') 10 10, auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Portfólio de Maria</h1>
+        <p>Meus projetos e aprendizados em HTML e CSS</p>
+    </header>
+
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou a Maria, uma desenvolvedora e artista digital apaixonada por design, fotografia e tecnologia. Este
+            portfólio mostra meu progresso com HTML e CSS, incluindo animações, efeitos e layout responsivo.</p>
+        <h3>Meu Estilo</h3>
+        <p>Trabalho com luz natural, Cenários Urbanos, e Ensaios Criativos. Cada sessão é planejada com cuidado para
+            momentos únicos</p>
+    </section>
+
+
+    <div class="parallax">Bem-vindo ao meu mundo criativo 🌈</div>
+
+
+    <section id="galeria">
+        <h2>Minhas fotografias</h2>
+        <div class="galeria">
+            <img src="barco.png" alt="fotografia 1">
+            <img src="imagem.png" alt="fotografia 2">
+            <img src="cachoeira.jpg" Pintura 3>
+            <img src="city.png" Pintura 3>
+            <img src="rua.png" Pintura 3>
+            <img src="estrada.png" Pintura 3>
+            <img src="mãos.png" Pintura 3>
+            <img src="flor.png" Pintura 3>
+
+
+
+        </div>
+    </section>
+
+
+    <section id="projetos">
+        <h2>Meus Serviços</h2>
+        <div class="card">
+            <img src="casamento2.png" alt="Câmera">
+            <h2>Casamentos</h2>
+            <p>Capturo o seu momento de felizes para sempre.</p>
+        </div>
+
+
+        <div class="card">
+            <div class="tag-oferta">+Popular</div>
+            <img src="verdadeira.png" alt="Lente de Câmera">
+            <h2>Beleza Real</h2>
+            <p>Captura de detalhes impressionantes.</p>
+        </div>
+
+        <div class="card">
+            <img src="menino.png" alt="Câmera">
+            <h2>Urbanas</h2>
+            <p>A beleza das ruas </p>
+        </div>
+
+        <div class="card">
+            <img src="deus.png" alt="Câmera">
+            <h2>Cores do ceu</h2>
+            <p>Desempenho superior para profissionais.</p>
+        </div>
+    </section>
+    <h2> Fotos mais pedidas em meus Trabalhos 😎</h2>
+    <div class="card">
+        <div class="tag-oferta">OFERTA!</div>
+        <img src="camera2.png">
+        <h2>Câmeras Canon 🤯</h2>
+        <p>Estilo e presença a todo momento. aproveite esta orferta!</p>
+    </div>
+
+    <div class="card">
+        <div class="tag-oferta">OFERTA!</div>
+        <img src="kit.png">
+        <h2>Kit de Câmeras sony 🤯</h2>
+        <p>Estilo e presença a todo momento.aproveite esta orferta!</p>
+    </div>
+
+    <div class="card">
+        <div class="tag-oferta">Novo!</div>
+        <img src="15 anos.png">
+        <h2>Ensaios de festa 15 anos 🤯</h2>
+        <p>Estilo e presença a todo momento.</p>
+    </div>
+
+    <div class="card">
+        <div class="tag-oferta">Novo!</div>
+        <img src="cha.png">
+        <h2>Chas de bebes 🤯</h2>
+        <p>Estilo e presença a todo momento.</p>
+    </div>
+
+     <div class="card">
+        <div class="tag-oferta">Novo!</div>
+        <img src="casamento1.png">
+        <h2>Casamentos 🤯</h2>
+        <p>Estilo e presença a todo momento.</p>
+    </div>
+
+    
+<!-- Plugin VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <section>
+
+        <div class="hover">Entre em contato para agendar seu ensaio fotografico</div>
+    </section>
+
+
+    <footer id="contato">
+        <p>Desenvolvido por Maria, apaixonada por fotos e design🤗</p>
+        <p><a href="mailto:Maria@email.com">Maria@email.com</a></p>
+    </footer>
+
+
+
+</body>
+
+</html>
